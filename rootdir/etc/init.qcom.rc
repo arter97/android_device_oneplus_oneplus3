@@ -1322,3 +1322,6 @@ on post-fs-data
     write /sys/class/leds/green/brightness 255
     write /sys/class/leds/blue/brightness 255
     write /sys/class/leds/green/blink 1
+
+on property:init.svc.bootanim=stopped
+    write /sys/class/graphics/fb0/srgb 1

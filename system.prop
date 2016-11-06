@@ -8,7 +8,7 @@ persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
 tunnel.audio.encode=false
 media.aac_51_output_enabled=true
-audio.offload.buffer.size.kb=32
+audio.offload.buffer.size.kb=64
 audio.offload.video=true
 audio.offload.pcm.16bit.enable=false
 audio.offload.pcm.24bit.enable=true
@@ -117,6 +117,10 @@ persist.radio.ignore_dom_time=5
 persist.radio.hw_mbn_update=0
 persist.radio.sw_mbn_update=0
 persist.radio.start_ota_daemon=1
+persist.radio.add_power_save=1
+
+# Force enable FastDormancy
+persist.env.fastdorm.enabled=true
 
 # RmNet Data
 persist.rmnet.data.enable=true
@@ -137,3 +141,9 @@ persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
+
+# Burn-in protection
+ro.systemui.burn_in_protection=true
+
+# VM
+dalvik.vm.dex2oat-swap=false
